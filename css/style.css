@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tinos", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+}
+
+.up {
+  background-color: #007765;
+  background-size: cover;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.logo {
+  width: 50%;
+}
+
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.menu-item {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.lnv {
+  border-right: 2px solid #fff;
+}
+
+.header-down {
+  background-image: url(../media/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.header-down-text {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 72px;
+}
+
+.problem {
+  background-color: #EEEEEE;
+  padding-bottom: 40px;
+}
+.problem .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.problen-logo {
+  margin: 40px auto 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  color: #007765;
+}
+
+.problem-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+
+.problem-text-element {
+  padding-bottom: 20px;
+}
+
+.hero {
+  background-image: url(../media/bgb.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 127px;
+  padding-bottom: 127px;
+}
+.hero .container {
+  padding: 0 90px;
+}
+
+.hero-text {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.piedPiperCoin {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+.piedPiperCoin .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.piedPiperCoin-logo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  color: #007765;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.piedPiperCoin-block {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.piedPiperCoin-block-logo {
+  width: 30%;
+  margin-right: 30px;
+}
+
+.piedPiperCoin-block-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+
+.piedPiperCoin-text {
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  padding-bottom: 60px;
+}
+
+.the-Team {
+  background-color: #EEEEEE;
+}
+.the-Team .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.the-Team-head {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  color: #007765;
+}
+
+.cards .container {
+  padding: 0 30px;
+}
+
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 10px);
+  margin-bottom: 30px;
+}
+.card-item .card-item-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #007765;
+  padding-top: 20PX;
+}
+.card-item .card-item-item {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+footer {
+  background-color: #333333;
+  padding-top: 50px;
+  padding-bottom: 62px;
+}
+
+.footer-container {
+  margin: 0 70px;
+  padding: 30 auto;
+}
+
+.footer-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
